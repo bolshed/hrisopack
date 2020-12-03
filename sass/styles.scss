@@ -1,4 +1,8 @@
 $navbar-dark-color: red;
 
+$theme-colors: (
+  "hriso-bg": #1f1417
+);
+
 
 @import '../node_modules/bootstrap/scss/bootstrap.scss';
