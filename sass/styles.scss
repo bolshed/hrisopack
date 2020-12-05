@@ -1,8 +1,29 @@
 $navbar-dark-color: red;
 
 $theme-colors: (
+  "primary":    $primary,
+  "secondary":  $secondary,
+  "success":    $success,
+  "info":       $info,
+  "warning":    $warning,
+  "danger":     $danger,
+  "light":      $light,
+  "dark":       $dark
   "hriso-bg": #1f1417
 );
 
+$body-bg: #1f1417;
+
+$spacer: 1rem;
+$spacers: (
+  0: 0,
+  1: $spacer / 4,
+  2: $spacer / 2,
+  3: $spacer,
+  4: $spacer * 1.5,
+  5: $spacer * 3,
+  6: $spacer * 4.5,
+  7: $spacer * 6
+);
 
 @import '../node_modules/bootstrap/scss/bootstrap.scss';
