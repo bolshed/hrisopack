@@ -18,4 +18,20 @@ $spacers: (
   7: $spacer * 6
 );
 
+// #gallery {
+  
+//   img {
+//     height: 75vw;
+//     object-fit: cover;
+    
+//     @media (min-width: $bootstrap-sm) {
+//       height: 35vw;
+//     }
+    
+//     @media (min-width: $bootstrap-lg) {
+//       height: 18vw;
+//     }
+//   }
+// }
+
 @import '../node_modules/bootstrap/scss/bootstrap.scss';
