@@ -1,4 +1,4 @@
-$navbar-dark-color: red;
+$navbar-dark-color: rgb(255, 46, 46);
 
 $theme-colors: (
   "hriso-bg": #1f1417
@@ -18,6 +18,43 @@ $spacers: (
   7: $spacer * 6
 );
 
+$bootstrap-sm: 576px;
+$bootstrap-md: 768px;
+$bootstrap-lg: 992px;
+$bootstrap-xl: 1200px;
+
+.cat-pix {
+  width: 60vw;
+
+  @media (min-width: $bootstrap-sm) {
+    width: 35vw;
+  }
+
+  @media (min-width: $bootstrap-md) {
+    width: 20vw;
+  }
+
+  @media (min-width: $bootstrap-lg) {
+    width: 14vw;
+  }
+
+  @media (min-width: $bootstrap-xl) {
+    width: 7vw;
+  }
+}
+
+
+.carousel-control-next-icon, .carousel-control-prev-icon {
+  display: inline-block;
+  background: rgb(92, 37, 0)  no-repeat center center;
+  background-size: 100% 100%;
+  height: 12vh !important;
+  width: 12vw !important;
+  filter: invert;
+
+}
+
+
 // #gallery {
   
 //   img {
@@ -29,7 +66,7 @@ $spacers: (
 //     }
     
 //     @media (min-width: $bootstrap-lg) {
-//       height: 18vw;
+//       height: 10vw;
 //     }
 //   }
 // }
