@@ -46,34 +46,39 @@
         <hr class="hr-heading">
     </div>
 
-    <div class="container-fluid d-flex w-100 px-6">
+    <div class="container-fluidw-75 px-6 mt-4">
+        <div class="row d-flex flex-column flex-md-row align-items-center align-items-md-start">
+            <form class="col-12 col-lg-6 d-flex flex-column w-50" action="https://formspree.io/f/meqprqeg"
+                method="POST">
+                <!-- <label for="InputName">Your Name</label> -->
+                <input type="text" class="form-control mb-3" name="name" id="InputName" placeholder="Име" required>
+                <!-- <label for="email"></label> -->
+                <input type="email" name="_replyto" class="form-control mb-3" placeholder="Имейл" required>
+                <input type="tel" class="form-control mb-3" name="phone" placeholder="Телефон">
+                <textarea name="message" class="form-control  mb-3" rows="5" placeholder="Съобщение"
+                    required></textarea>
 
-        <div class="row mr-6">
-            <h2 class="col-6 mr-5" style="color: rgb(1, 167, 29);">ХрисоПак EOOD</h2>
-            <p class="fs-5" style="color: rgb(1, 167, 29)"> Адрес: кв. Дружба 2, Цариградски к-с,
-                Бл 281, Вх. В, магазин на кота 0</p>
-            <p class="fs-5" style="color: rgb(1, 167, 29)">
-                Тел. 0885 777 611
-            </p>
-            <p class="fs-5" style="color: rgb(1, 167, 29)">
-                Имейл: opakovane@gmail.com</p>
+                <!-- </label> -->
+
+                <!-- your other form fields go here -->
+
+                <button type="submit">Send</button>
+                <br>
+            </form>
+
+
+            <div class="w-50">
+                <h3 style="color: rgb(1, 167, 29);">ХрисоПак EOOD</h3>
+                <p class="fs-5" style="color: rgb(1, 167, 29)"> Адрес: кв. Дружба 2, Цариградски к-с,
+                    Бл 281, Вх. В, магазин на кота 0</p>
+                <p class="fs-5" style="color: rgb(1, 167, 29)">
+                    Тел. 0885 777 611
+                </p>
+                <p class="fs-5" style="color: rgb(1, 167, 29)">
+                    Имейл: opakovane@gmail.com</p>
+            </div>
+
         </div>
-
-
-        <form class="col-6 d-flex flex-column w-50 ml-6" action="https://formspree.io/f/meqprqeg" method="POST">
-            <!-- <label for="InputName">Your Name</label> -->
-            <input type="text" class="form-control mb-3" name="name" id="InputName" placeholder="Име" required>
-            <!-- <label for="email"></label> -->
-            <input type="email" name="_replyto" class="form-control mb-3" placeholder="Имейл" required>
-            <input type="tel" class="form-control mb-3" name="phone" placeholder="Телефон">
-            <textarea name="message" class="form-control  mb-3" rows="5" placeholder="Съобщение" required></textarea>
-
-            <!-- </label> -->
-
-            <!-- your other form fields go here -->
-
-            <button type="submit">Send</button>
-        </form>
 
         <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
             integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
