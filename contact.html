@@ -4,14 +4,16 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description"
+        content="Опаковане и доставка на подаръци, изработка на хартиени торби и луксозни кутии, доставка на букети, декорация за Вашето събитие">
     <link rel="icon" href="images/box+gift+package_16x16.ico" type="image/x-icon">
-    <title>Хрисо-Пак</title>
+    <title>ХрисоПак ЕООД</title>
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./dist/styles.css">
 </head>
 
-<body style="font-family: Lobster;" class="text-center">
+<body style="font-family: Lobster;">
     <nav class="navbar navbar-expand-lg sticky-top navbar-dark bg-hriso-bg fs-3">
         <div class="container-fluid">
             <a class="navbar-brand" href="#">
@@ -25,7 +27,7 @@
             <div class="collapse navbar-collapse " id="navbarNavAltMarkup">
                 <div class="navbar-nav mx-auto pr-5">
                     <a class="nav-link ml-5 " href="index.html">Начало</a>
-                    <a class="nav-link ml-5 " href="services.html">Услуги</a>
+                    <!-- <a class="nav-link ml-5 " href="services.html">Услуги</a> -->
                     <a class="nav-link ml-5" href="catalog.html">Каталог</a>
                     <a class="nav-link ml-5 active" aria-current="page" href="#">Контакт</a>
                 </div>
@@ -37,12 +39,33 @@
         </div>
     </nav>
 
-    <div class="container w-75 mt-3 p-6">
-        <form class="d-flex flex-column " action="https://formspree.io/f/meqprqeg" method="POST">
+
+    <div>
+        <hr class="hr-heading">
+        <h2 style="color: rgb(1, 167, 29);" class="text-center">Свържете се с нас</h2>
+        <hr class="hr-heading">
+    </div>
+
+    <div class="container-fluid d-flex w-100 px-6">
+
+        <div class="row mr-6">
+            <h2 class="col-6 mr-5" style="color: rgb(1, 167, 29);">ХрисоПак EOOD</h2>
+            <p class="fs-5" style="color: rgb(1, 167, 29)"> Адрес: кв. Дружба 2, Цариградски к-с,
+                Бл 281, Вх. В, магазин на кота 0</p>
+            <p class="fs-5" style="color: rgb(1, 167, 29)">
+                Тел. 0885 777 611
+            </p>
+            <p class="fs-5" style="color: rgb(1, 167, 29)">
+                Имейл: opakovane@gmail.com</p>
+        </div>
+
+
+        <form class="col-6 d-flex flex-column w-50 ml-6" action="https://formspree.io/f/meqprqeg" method="POST">
             <!-- <label for="InputName">Your Name</label> -->
-            <input type="text" class="form-control mb-3" name="name" id="InputName" placeholder="Enter Name" required>
+            <input type="text" class="form-control mb-3" name="name" id="InputName" placeholder="Име" required>
             <!-- <label for="email"></label> -->
-            <input type="email" name="_replyto" class="form-control mb-3" placeholder="name@example.com" required>
+            <input type="email" name="_replyto" class="form-control mb-3" placeholder="Имейл" required>
+            <input type="tel" class="form-control mb-3" name="phone" placeholder="Телефон">
             <textarea name="message" class="form-control  mb-3" rows="5" placeholder="Съобщение" required></textarea>
 
             <!-- </label> -->
