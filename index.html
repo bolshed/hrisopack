@@ -13,7 +13,7 @@
     <link rel="stylesheet" href="./dist/styles.css">
 </head>
 
-<body style="font-family: Balsamiq Sans;" class="bg-hriso-bg">
+<body style="font-family: Balsamiq Sans;" class="d-flex flex-column bg-hriso-bg">
     <nav class="navbar navbar-expand-lg sticky-top navbar-dark bg-hriso-bg fs-3">
         <div class="container-fluid ">
             <a class="navbar-brand" href="index.html">
@@ -38,9 +38,12 @@
         </div>
     </nav>
 
-    <hr class="hr-heading">
-    <h3 style="color: rgb(1, 167, 29);" class="text-center">Нашите услуги</h3>
-    <hr class="hr-heading">
+    <div>
+        <hr class="hr-heading">
+        <h3 style="color: rgb(1, 167, 29);" class="text-center">Нашите услуги</h3>
+        <hr class="hr-heading">
+    </div>
+
     <div class="container-fluid d-flex flex-wrap justify-content-evenly p-3 mt-3">
         <div class="card mb-4 bg-light" style="width: 14rem;">
             <img src="images/services/opakovane.png" class="card-img-top p-1" alt="опаковане" data-bs-toggle="modal"
@@ -299,12 +302,22 @@
     </div>
 
     <!-- Footer -->
-
-    <footer class="footer mt-auto py-3 bg-dark">
+    <!-- wrapper pushing the footer to the bottom -->
+    <div class="wrapper">  
+      <div class="push"></div>
+    </div>
+    
+    <footer class="footer mt-auto py-2 bg-dark">
         <div class="container">
             <span class="text-muted">ХрисоПак ЕООД // Адрес: кв. Дружба 2, Цариградски к-с, бл. 281, Вх. В, магазин
                 на кота 0 // Тел. 0885 777 611 // Имейл: opakovane@gmail.com // </span>
             <span class="text-muted" id="date"></span>
+            <script>
+                n = new Date();
+                y = n.getFullYear();
+                document.getElementById("date").innerHTML =
+                    `©${y} <a style='color: grey;' href="https://bolshed.github.io/bdoychinov/">B. Doychinov</a>`;
+            </script>
         </div>
     </footer>
 
@@ -312,12 +325,7 @@
     integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous">
   </script>
   
-    <script>
-        n = new Date();
-        y = n.getFullYear();
-        document.getElementById("date").innerHTML =
-            `©${y} <a href="https://bolshed.github.io/bdoychinov/">B. Doychinov</a>`;
-    </script>
+
 
 </body>
 

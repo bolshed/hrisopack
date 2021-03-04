@@ -1,3 +1,11 @@
+body,
+html {
+  height: 100%;
+}
+
+body {
+  background-image: url(/images/floral1_darker2.jpg);
+}
 
 $navbar-dark-color: rgb(255, 46, 46);
 
@@ -8,16 +16,14 @@ $body-bg: #1f1417;
 }
 
 $spacer: 1rem;
-$spacers: (
-  0: 0,
+$spacers: (0: 0,
   1: $spacer / 4,
   2: $spacer / 2,
   3: $spacer,
   4: $spacer * 1.5,
   5: $spacer * 3,
   6: $spacer * 4.5,
-  7: $spacer * 6
-);
+  7: $spacer * 6);
 
 $bootstrap-sm: 576px;
 $bootstrap-md: 768px;
@@ -69,8 +75,7 @@ $gray-900: #212529;
 $black: #000;
 
 // fusv-disable
-$grays: (
-  "100": $gray-100,
+$grays: ("100": $gray-100,
   "200": $gray-200,
   "300": $gray-300,
   "400": $gray-400,
@@ -78,8 +83,7 @@ $grays: (
   "600": $gray-600,
   "700": $gray-700,
   "800": $gray-800,
-  "900": $gray-900
-);
+  "900": $gray-900);
 // fusv-enable
 
 $blue: #0d6efd;
@@ -94,8 +98,7 @@ $teal: #20c997;
 $cyan: #0dcaf0;
 
 // scss-docs-start colors-map
-$colors: (
-  "blue": $blue,
+$colors: ("blue": $blue,
   "indigo": $indigo,
   "purple": $purple,
   "pink": $pink,
@@ -107,8 +110,7 @@ $colors: (
   "cyan": $cyan,
   "white": $white,
   "gray": $gray-600,
-  "gray-dark": $gray-800
-);
+  "gray-dark": $gray-800);
 // scss-docs-end colors-map
 
 $primary: $blue;
@@ -121,8 +123,7 @@ $light: $gray-100;
 $dark: $gray-900;
 
 // scss-docs-start theme-colors-map
-$theme-colors: (
-  "primary": $primary,
+$theme-colors: ("primary": $primary,
   "secondary": $secondary,
   "success": $success,
   "info": $info,
@@ -130,23 +131,10 @@ $theme-colors: (
   "danger": $danger,
   "light": $light,
   "dark": $dark,
-  "hriso-bg": #1f1417
-);
+  "hriso-bg": #1f1417);
 
-// #gallery {
-
-//   img {
-//     height: 75vw;
-//     object-fit: cover;
-
-//     @media (min-width: $bootstrap-sm) {
-//       height: 35vw;
-//     }
-
-//     @media (min-width: $bootstrap-lg) {
-//       height: 10vw;
-//     }
-//   }
-// }
+.content {
+  flex: 1 0 auto;
+}
 
 @import "../node_modules/bootstrap/scss/bootstrap.scss";
