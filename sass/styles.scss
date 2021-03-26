@@ -1,26 +1,50 @@
 body {
   font-family: 'RepoRegular' !important;
+
 }
 
-$navbar-dark-color: rgb(255, 46, 46);
+$navbar-dark-color: rgb(255, 94, 54);
+
+#logo {
+  width: 5rem;
+}
+
+#gifts {
+  width: 6rem;
+}
 
 .heading {
   background: #1f1417;
 }
 
 // parallax
-.main {
-  background-image: url(../images/gifts-decorations-flowers.jpg);
-  background-attachment: fixed;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
+main {
+    background-image: url(../images/gifts-decorations-flowers.jpg);
+    background-attachment: fixed;
+    // background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+//   filter: url("data:image/svg+xml;utf8,<svg></svg>#grayscale");
+// /* For Internet Explorer 6 to 9 */
+// filter: gray;
+//   -webkit-filter: grayscale(70%);
+//   -moz-filter: grayscale(70%);
+//   -ms-filter: grayscale(70%);
+//   -o-filter: grayscale(70%)
 }
 
-
+.cards-container {
+  // background-image:
+  //   linear-gradient(to bottom, rgba(0, 0, 0, 0), rgb(78, 78, 78));
+    background: #1f1417;  /* fallback colour */
+    background: -webkit-linear-gradient(rgba(29, 38, 113, 0.8), rgb(68, 67, 67));
+    background: linear-gradient(rgba(29, 38, 113, 0), rgb(68, 67, 67));
+}
 
 .cards {
-  box-shadow: 0 0 2rem 1rem  rgba(19, 19, 20, 0.856);
+  width: 13rem;
+  box-shadow: 10px 0 2rem 1.2rem  rgba(36, 36, 37, 0.856);
 }
 
 $spacer: 1rem;
@@ -37,6 +61,7 @@ $bootstrap-sm: 576px;
 $bootstrap-md: 768px;
 $bootstrap-lg: 992px;
 $bootstrap-xl: 1200px;
+
 
 .cat-pix {
   width: 60vw;
@@ -61,7 +86,7 @@ $bootstrap-xl: 1200px;
 .carousel-control-next-icon,
 .carousel-control-prev-icon {
   display: inline-block;
-  background: rgb(1, 167, 29) no-repeat center center;
+  background: rgb(114, 145, 74) no-repeat center center;
   background-size: 100% 100%;
   height: 10vh !important;
   width: 10vw !important;
@@ -139,10 +164,14 @@ $theme-colors: ("primary": $primary,
   "danger": $danger,
   "light": $light,
   "dark": $dark,
-  "hriso-bg": #1f1417);
+  "hriso-bg": #1f1417,
+  "hriso1": #72914A,
+  "hriso2": rgb(255, 94, 54)
+  );
 
 .content {
   flex: 1 0 auto;
 }
 
 @import "../node_modules/bootstrap/scss/bootstrap.scss";
+@import "../node_modules/bootstrap/scss/utilities";
